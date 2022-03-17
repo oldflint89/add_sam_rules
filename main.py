@@ -28,4 +28,4 @@ for i in ip_list:
     print(f'add {i}')
     result = ssh.send_command(f'fw sam -f localhost -j src {i}')
     print(result)
-ssh.close()
+ssh.disconnect()
